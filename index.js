@@ -13,7 +13,7 @@ const PORT = process.env.PORT;
 const FRONT = process.env.FRONT
 const URL = process.env.URL
 console.log(PORT)
-app.use(cors({ origin: [FRONT], credentials: true }));
+app.use(cors({ origin: ["https://heliverse-front.onrender.com"], credentials: true }));
 app.use(bodyParser.json());
 
 
