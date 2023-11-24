@@ -10,7 +10,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
-const FRONT = process.env.FRONT
 const URL = process.env.URL
 console.log(PORT)
 app.use(cors({ origin: ["https://heliverse-front.onrender.com"], credentials: true }));
