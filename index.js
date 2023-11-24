@@ -4,7 +4,6 @@ import cors from 'cors';
 
 import bodyParser from 'body-parser';
 import {Connect}  from "./Components/Connection/mongodb.js"
-import { insertData } from './Components/Controller/dataController.js';
 import route from "./Components/Routes/routes.js"
 import dotenv from 'dotenv';
 dotenv.config();
@@ -18,7 +17,7 @@ app.use(bodyParser.json());
 Connect(URL)
 
 
-insertData();
+
 
 
 
