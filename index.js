@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 const URL = process.env.URL
-app.use(cors({ origin: ["https://heliverse-front.onrender.com"], credentials: true }));
+app.use(cors({ origin: ["https://heliverse-front.onrender.com","http://localhost:3000"], credentials: true }));
 app.use(bodyParser.json());
 
 
